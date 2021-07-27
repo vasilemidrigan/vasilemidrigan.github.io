@@ -1,8 +1,6 @@
 /*global styles*/
 * {
-  font-family: Georgia, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: monospace;
 }
 body {
   background-color: snow;
@@ -10,3 +8,58 @@ body {
 h1, h2 {
   text-align: center;
 }
+/*specific styles*/
+/*header*/
+header {
+  border: 2px solid rgb(83, 79, 79);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* position: fixed;
+  top: 0px;
+  left: 5px; */
+
+}
+/*navigation*/
+nav {
+  display: flex;
+  padding: 10px;
+}
+nav ul li {
+  border: 4px solid rgb(83, 79, 79);
+  border-radius: 10px;
+  background-color:palegoldenrod;
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+}
+nav ul li:hover {
+  background-color:gainsboro;
+}
+nav a {
+  text-decoration: none;
+  color:dimgray;
+  font-size: 20px;
+}
+/*main*/
+/*content*/
+.content {
+  border: 1px solid black;
+  width: 100%;
+  height: 300px;
+}
+/*footer*/
+footer {
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+
+
