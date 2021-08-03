@@ -130,6 +130,9 @@ main {
   margin-right: 20px;
   /* border: 1px solid blue; */
 }
+.links img:hover {
+  filter: drop-shadow(5px 5px 3px #007ec0);
+}
 .linkedin {
   margin-top: 15px;
   margin-right: 10px;
@@ -148,6 +151,7 @@ main {
 
 /*footer */
 footer {
+  color: #676767;
   font-size: 15px;
   text-align: center;
   width: 100%;
