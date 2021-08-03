@@ -30,7 +30,7 @@ a {
 
 /*header*/
 header {
-  width: 100%;
+  min-width: 930px;
   height: 150px;
   display: flex;
   align-items: center;
@@ -44,11 +44,14 @@ nav {
   justify-content: center;
 }
 .navigation {
-  font-size: 22px;
+  font-size: 30px;
   margin: 30px;
   padding: 10px;
   border-radius: 2px;
-  filter: drop-shadow(2px 2px 2px #007ec0)
+  filter: drop-shadow(1px 1px 1px #007ec0)
+}
+.navigation p {
+  color: #616161;
 }
 .navigation:hover {
   filter: drop-shadow(5px 5px 5px #007ec0);
@@ -84,6 +87,7 @@ nav {
 
 /*main*/
 main {
+  min-width: 930px;
   display: grid;
   grid-template: 1fr / 1fr 1fr;
   grid-template-areas: 'photo description';
@@ -104,10 +108,10 @@ main {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  filter: drop-shadow(5px 5px 5px #007ec0);
+  filter: drop-shadow(3px 3px 3px #007ec0);
 }
 #photo img:hover {
-  filter: drop-shadow(10px 10px 10px #007ec0);
+  filter: drop-shadow(6px 6px 6px #007ec0);
   cursor: pointer;
 }
 
@@ -167,6 +171,7 @@ main {
 
 /*footer */
 footer {
+  min-width: 930px;
   color: #676767;
   font-size: 15px;
   text-align: center;
