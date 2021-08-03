@@ -123,7 +123,27 @@ main {
 }
 .links {
   margin-top: 20px;
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+.links img {
+  margin-right: 20px;
+  /* border: 1px solid blue; */
+}
+.linkedin {
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+}
+.twitter {
+  margin-top: 15px;
+  width: 70px;
+  height: 70px;
+}
+.github img {
+  width: 60px;
+  height: 60px;
 }
 
 /*footer*/
