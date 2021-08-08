@@ -36,6 +36,12 @@ header {
   align-items: center;
   position: relative;
 }
+@media only screen and (max-width: 360px) {
+  header {
+    border: 1px solid black;  
+    min-width: 360px;
+  }
+} 
 
 /*navigation*/
 nav {
@@ -43,6 +49,13 @@ nav {
   display: flex;
   justify-content: center;
 }
+/* media queries for nav 320x640*/ 
+ @media only screen and (max-width: 360px) {
+  nav {
+    width: 100%;
+    justify-content: unset;
+  }
+}  
 .navigation {
   font-size: 30px;
   margin: 30px;
@@ -50,23 +63,45 @@ nav {
   border-radius: 2px;
   filter: drop-shadow(1px 1px 1px #007ec0)
 }
+/* media queries for .navigation 320x640*/ 
+@media only screen and (max-width: 360px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+  }
+  #home {
+    background-image: url(../icons/home.svg);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+   
+  }
+  #about {
+    background-image: url(../icons/about.svg);
+    width: 70px;
+    height: 70px;
+   
+  }
+  #get-in-touch {
+    background-image: url(../icons/contact.svg);
+    width: 70px;
+    height: 70px;
+   
+  }
+} 
 .navigation p {
   color: #616161;
 }
+@media only screen and (max-width: 360px) {
+  .navigation p {
+    display: none;
+  }
+}
 .navigation:hover {
   filter: drop-shadow(5px 5px 5px #007ec0);
-}
-#home-icon {
-  width: 64px;
-  height: 64px;
-}
-#about-icon {
-  width: 64px;
-  height: 64px;
-}
-#contact-icon {
-  width: 64px;
-  height: 64px;
 }
 
 /*under-construction section*/
@@ -83,6 +118,12 @@ nav {
 }
 .under-construction:hover {
   cursor: pointer;
+}
+/*media queries 360x640px under-construction section*/
+@media only screen and (max-width: 360px) {
+  .under-construction {
+    display: none;
+  }
 }
 
 /*main*/
