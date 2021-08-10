@@ -46,10 +46,7 @@ nav {
 .navigation p {
   color: #616161;
 }
-.navigation:hover {
-  filter: drop-shadow(5px 5px 5px #007ec0);
-}
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .navigation p {
     display: none;
   }
@@ -72,7 +69,6 @@ nav {
     height: 60px;
   }
 }
-
 /*main*/
 main {
   display: grid;
@@ -81,20 +77,14 @@ main {
   grid-template-areas: 'photo' 
                        'description';
 }
-
 /*photo section*/
 #photo img {
   margin-top: 20px;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   filter: drop-shadow(3px 3px 3px #007ec0);
 }
-#photo img:hover {
-  filter: drop-shadow(6px 6px 6px #007ec0);
-  cursor: pointer;
-}
-
 /*description section*/
 #description {
   text-align: center;
@@ -114,10 +104,11 @@ main {
 }
 .greeting-section {
   margin-top: 20px;
+  font-size: 1.5em;
 }
 .describe-myself-section {
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 1.2em;
 }
 .links {
   margin-top: 20px;
@@ -127,9 +118,6 @@ main {
 .links img {
   filter: drop-shadow(2px 2px 2px #007ec0);
 
-}
-.links img:hover {
-  filter: drop-shadow(5px 5px 3px #007ec0);
 }
 .linkedin img,
 .twitter img, 
