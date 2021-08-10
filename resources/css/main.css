@@ -30,124 +30,69 @@ a {
 
 /*header*/
 header {
-  min-width: 930px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  position: relative;
+  background-color: rgb(226, 226, 226);
+  max-width: 100%;
 }
-@media only screen and (max-width: 360px) {
-  header {
-    border: 1px solid black;  
-    min-width: 360px;
-  }
-} 
-
 /*navigation*/
 nav {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 10px 0;
 }
-/* media queries for nav 320x640*/ 
- @media only screen and (max-width: 360px) {
-  nav {
-    width: 100%;
-    justify-content: unset;
-  }
-}  
 .navigation {
+  border: 1px solid lightseagreen;
   font-size: 30px;
-  margin: 30px;
-  padding: 10px;
   border-radius: 2px;
   filter: drop-shadow(1px 1px 1px #007ec0)
 }
-/* media queries for .navigation 320x640*/ 
-@media only screen and (max-width: 360px) {
-  .navigation {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
-    padding: auto;
-  }
-  #home {
-    background-image: url(../icons/home.svg);
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
-   
-  }
-  #about {
-    background-image: url(../icons/about.svg);
-    width: 70px;
-    height: 70px;
-   
-  }
-  #get-in-touch {
-    background-image: url(../icons/contact.svg);
-    width: 70px;
-    height: 70px;
-   
-  }
-} 
 .navigation p {
   color: #616161;
-}
-@media only screen and (max-width: 360px) {
-  .navigation p {
-    display: none;
-  }
 }
 .navigation:hover {
   filter: drop-shadow(5px 5px 5px #007ec0);
 }
-
-/*under-construction section*/
-.under-construction {
-  font-size: 19px;
-  position: absolute;
-  right: 0;
-  width: 150px;
-  background-color: #ffd300;
-  text-align: center;
-  margin-right: 10px;
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px #007ec0;
-}
-.under-construction:hover {
-  cursor: pointer;
-}
-/*media queries 360x640px under-construction section*/
-@media only screen and (max-width: 360px) {
-  .under-construction {
+@media (max-width: 300px) {
+  .navigation p {
     display: none;
+  }
+  #home {
+    background-image: url(../icons/home.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
+  #about {
+    background-image: url(../icons/info.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
+  #get-in-touch {
+    background-image: url(../icons/contacts.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
   }
 }
 
 /*main*/
 main {
-  min-width: 930px;
+  background-color: rgb(210, 212, 207);
   display: grid;
-  grid-template: 1fr / 1fr 1fr;
-  grid-template-areas: 'photo description';
+  justify-items: center;
+  grid-template: 0.5 1fr / 1fr;
+  grid-template-areas: 'photo' 
+                       'description';
 }
 
 /*photo section*/
-.main-section {
-  margin: 30px;
-  padding: 20px;
-}
 #photo {
- display: flex;
- justify-content: center;
- /* border: 1px solid blue; */
-
+ border: 1px solid lightseagreen;
 }
 #photo img {
-  width: 250px;
-  height: 250px;
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   filter: drop-shadow(3px 3px 3px #007ec0);
 }
@@ -158,11 +103,12 @@ main {
 
 /*description section*/
 #description {
+  text-align: center;
+  border: 1px solid lightseagreen;
   color: #616161;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   border-radius: 10px;
 }
 #description span {
@@ -170,7 +116,6 @@ main {
 }
 .introduction {
   border: 1px solid black;
-  height: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -186,40 +131,33 @@ main {
   margin-top: 20px;
   display: flex;
   align-items: center;
+  border: 1px solid lightseagreen;
 }
 .links img {
-  margin-right: 20px;
   filter: drop-shadow(2px 2px 2px #007ec0);
+  border: 1px solid lightseagreen;
+
 }
 .links img:hover {
   filter: drop-shadow(5px 5px 3px #007ec0);
 }
-.linkedin {
-  margin-top: 15px;
-  margin-right: 10px;
-  width: 70px;
-  height: 70px;
-}
-.twitter {
-  margin-top: 15px;
-  width: 70px;
-  height: 70px;
-}
+.linkedin img,
+.twitter img, 
 .github img {
-  width: 60px;
-  height: 60px;
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
 }
-
 /*footer */
 footer {
-  min-width: 930px;
+  max-width: 100%;
   color: #676767;
   font-size: 15px;
   text-align: center;
-  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  /*this message shouldn't be viewed on main branch*/
+  background-color: rgb(189, 188, 188);
 }
 
 
