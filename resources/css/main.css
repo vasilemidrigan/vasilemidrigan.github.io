@@ -101,7 +101,7 @@ main {
   main {
     max-width: 1000px;
     margin: 50px auto;
-    grid-template: 1fr / 1fr 1fr;
+    grid-template: 1fr / 0.5fr 1fr;
     grid-template-areas: 'photo' 'description';
   }
 }
