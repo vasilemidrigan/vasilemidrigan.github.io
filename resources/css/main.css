@@ -18,6 +18,7 @@
 body {
   background-color: #f1f1f2;
 }
+
 h1, h2 {
   text-align: center;
 }
@@ -30,7 +31,13 @@ a {
 
 /*header*/
 header {
+  position: relative;
   max-width: 100%;
+}
+@media (max-width: 200px) {
+  header {
+    min-width: 200px;
+  }
 }
 /*navigation*/
 nav {
@@ -45,6 +52,9 @@ nav {
 }
 .navigation p {
   color: #616161;
+}
+.navigation p:hover {
+  filter: drop-shadow(2px 2px 2px #c2e2f3)
 }
 @media (max-width: 400px) {
   .navigation p {
@@ -89,6 +99,35 @@ nav {
     margin-right: 50px;
   }
 }
+/*under construction advertiser*/
+.under-construction {
+  background-color: #616161;
+  color: #ffd800;
+  display: inline-block;
+  padding: 3px; 
+  filter: drop-shadow(3px 3px 3px #bbb);
+}
+.under-construction:hover {
+  cursor: pointer;
+  filter: drop-shadow(3px 3px 3px rgb(134, 132, 132));
+}
+@media (min-width: 400px) {
+  .under-construction {
+    text-align: center;
+    color: #616161;
+    position: absolute;
+    right: 10px;
+    bottom: -50px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #ffd800;
+   
+  }
+  .under-construction p{
+    display: unset;
+  }
+}
 /*main*/
 main {
   display: grid;
@@ -121,6 +160,10 @@ main {
   height: 100px;
   border-radius: 50%;
   filter: drop-shadow(3px 3px 3px #007ec0);
+}
+#photo img:hover {
+  filter: drop-shadow(5px 5px 5px #007ec0);
+  cursor: pointer;
 }
 @media (min-width: 500px) {
   #photo img {
@@ -177,7 +220,9 @@ main {
 }
 .links img {
   filter: drop-shadow(2px 2px 2px #007ec0);
-
+}
+.links img:hover {
+  filter: drop-shadow(3px 3px 2px #007ec0);
 }
 .linkedin img,
 .twitter img, 
