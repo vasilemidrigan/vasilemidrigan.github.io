@@ -69,6 +69,26 @@ nav {
     height: 60px;
   }
 }
+@media (min-width: 401px) {
+  nav {
+    justify-content: center;
+  }
+  .navigation {
+    font-size: 25px;
+    margin: 10px;
+  }
+}
+@media (min-width: 500px) {
+  .navigation {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 700px) {
+  .navigation {
+    margin-right: 50px;
+  }
+}
 /*main*/
 main {
   display: grid;
@@ -77,7 +97,24 @@ main {
   grid-template-areas: 'photo' 
                        'description';
 }
+@media (min-width: 800px) {
+  main {
+    max-width: 1000px;
+    margin: 50px auto;
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas: 'photo' 'description';
+  }
+}
 /*photo section*/
+#photo {
+  grid-area: 'photo';
+}
+@media (min-width: 800px) {
+  #photo {
+    display: flex;
+    align-items: center;
+  }
+}
 #photo img {
   margin-top: 20px;
   width: 100px;
@@ -85,8 +122,21 @@ main {
   border-radius: 50%;
   filter: drop-shadow(3px 3px 3px #007ec0);
 }
+@media (min-width: 500px) {
+  #photo img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 800px) {
+  #photo img {
+    width: 250px;
+    height: 250px;
+  }
+}
 /*description section*/
 #description {
+  grid-area: 'description';
   text-align: center;
   color: #616161;
   display: flex;
@@ -109,6 +159,16 @@ main {
 .describe-myself-section {
   margin-top: 20px;
   font-size: 1.2em;
+}
+@media (min-width: 800px) {
+  .greeting-section {
+    margin-top: 20px;
+    font-size: 1.7em;
+  }
+  .describe-myself-section {
+    margin-top: 20px;
+    font-size: 1.5em;
+  } 
 }
 .links {
   margin-top: 20px;
@@ -135,6 +195,11 @@ footer {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+@media (min-width: 800px) {
+  footer {
+    margin-top: 100px;
+  }
 }
 
 
