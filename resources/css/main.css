@@ -101,8 +101,10 @@ nav {
 }
 /*under construction advertiser*/
 .under-construction {
+  font-size: 0.8em;
   background-color: #616161;
   color: #ffd800;
+  border: 2px dashed #ffd800;
   display: inline-block;
   padding: 3px; 
   filter: drop-shadow(3px 3px 3px #bbb);
@@ -113,14 +115,18 @@ nav {
 }
 @media (min-width: 400px) {
   .under-construction {
+    font-size: 1em;
     text-align: center;
     color: #616161;
+    display: flex;
+    align-items: center;
     position: absolute;
     right: 10px;
     bottom: -50px;
     width: 100px;
     height: 50px;
     border-radius: 5px;
+    border: 2px dashed #616161;
     background-color: #ffd800;
    
   }
