@@ -229,11 +229,10 @@ footer {
   color: #676767;
   font-size: 15px;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin: 50px 30px 20px 30px;
 }
 @media (min-width: 800px) {
   footer {
-    margin-top: 100px;
+    margin: 100px 30px 20px 30px;
   }
 }
