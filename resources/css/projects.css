@@ -1,0 +1,33 @@
+/* Projects page styles */
+/* Variables */
+:root {
+  /* Main colors */
+  --main-background-color: #f1f1f2;
+  /* Text colors */
+  --text-main-color: #676767;
+  --text-secondary-color: #0079b9;
+  --text-third-color: #21b6a8;
+}
+a {
+  color: var(--text-third-color);
+}
+span {
+  color: var(--text-secondary-color);
+}
+/*Wrapper*/
+.wrapper {
+  text-align: center;
+}
+/* Brief */
+.info {
+  color: var(--text-main-color);
+  padding: 20px;
+  font-size: 1.3em;
+}
+.project {
+  padding: 20px;
+}
+.project a {
+  display: block;
+  margin-top: 20px;
+}
