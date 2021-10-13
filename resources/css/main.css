@@ -1,3 +1,6 @@
+/*################################################################*/
+/*#####################   INDEX.HTML   ###########################*/
+/*################################################################*/
 /* Variables */
 :root {
   /* Main colors */
@@ -245,3 +248,88 @@ footer {
     margin: 100px 30px 20px 30px;
   }
 }
+/*projects.html styles*/
+/*################################################################*/
+/*#####################   PROJECTS.HTML   ###########################*/
+/*################################################################*/
+/* Links */
+.project a {
+  color: var(--text-third-color);
+  display: block;
+  margin-top: 20px;
+}
+/* Span section */
+.info span {
+  color: var(--text-secondary-color);
+}
+/*Wrapper*/
+.wrapper {
+  text-align: center;
+}
+/* Brief */
+.info {
+  color: var(--text-main-color);
+  padding: 20px;
+  font-size: 1.3em;
+}
+.project {
+  padding: 20px;
+}
+
+/*about.html styles*/
+/*################################################################*/
+/*#####################   ABOUT.HTML   ###########################*/
+/*################################################################*/
+/* Wrapper section */
+/*   (the entire grid section which covers all content)*/
+.about-wrapper {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-areas:
+    "first-left"
+    "first-right"
+    "second-left"
+    "second-right"
+    "third-left";
+}
+.about-wrapper > div {
+  margin-bottom: 5px;
+}
+/* Image section */
+.first-left {
+  grid-area: first-left;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.first-left img {
+  width: 100px;
+  height: 100px;
+}
+/* Introducing section */
+.first-right {
+  grid-area: first-right;
+  border: 1px solid black;
+}
+.first-right h3 {
+  margin: 10px;
+}
+/* Technical Skills section */
+.second-left {
+  grid-area: second-left;
+  border: 1px solid black;
+}
+.second-right {
+  grid-area: second-right;
+  border: 1px solid black;
+}
+.third-left {
+  grid-area: third-left;
+  border: 1px solid black;
+}
+/*contacts.html styles*/
+/*################################################################*/
+/*#####################   CONTACTS.HTML   ###########################*/
+/*################################################################*/
