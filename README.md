@@ -5,6 +5,9 @@ _v0.5 14.10.2021_
 
 [visit](https://vasilemidrigan.github.io/index.html)
 ![Image](./resources/images/updates/home_page.png)
+**300x625 version of homepage**
+
+![Image](./resources/images/updates/300x625.png)
 
 ---
 
@@ -26,3 +29,12 @@ _v0.5 14.10.2021_
 
 [visit](https://vasilemidrigan.github.io/contact.html)
 ![Image](./resources/images/updates/contact_page.png)
+**300x625 version of contact page**
+
+![Image](./resources/images/updates/300x625_contact_page.png)
+
+#### Hamburger Menu
+
+**300x625 version**
+
+![Image](./resources/images/updates/300x625_hamburger_menu.png)
