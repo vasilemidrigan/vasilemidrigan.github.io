@@ -1,5 +1,5 @@
 /*################################################################*/
-/*#####################   INDEX.HTML   ###########################*/
+/*#####################   INDEX.HTML (and general styles)  #######*/
 /*################################################################*/
 /* Variables */
 :root {
@@ -46,7 +46,7 @@ p {
   color: var(--text-main-color);
 }
 hr {
-  margin: 10px;
+  margin: 10px 100px;
 }
 /*specific styles*/
 /*header*/
@@ -75,6 +75,9 @@ nav {
 .logo {
   width: 25%;
 }
+.logo:hover {
+  filter: drop-shadow(0 0 1px var(--text-third-color));
+}
 .logo a {
   color: var(--text-third-color);
   display: block;
@@ -92,6 +95,17 @@ nav {
   width: 100%;
   opacity: 0.9;
 }
+#links a {
+  width: 50vw;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 1.5em;
+  color: var(--text-secondary-color);
+  border-bottom: 3px dashed var(--text-third-color);
+}
+#links > a:hover {
+  filter: drop-shadow(0 0 1px var(--text-third-color));
+}
 @media (min-width: 800px) {
   #links {
     position: relative;
@@ -100,12 +114,9 @@ nav {
     opacity: 1;
     display: inline-block;
   }
-}
-#links a {
-  padding: 20px;
-  font-size: 1.5em;
-  color: var(--text-secondary-color);
-  border-bottom: 3px dashed var(--text-third-color);
+  #links a {
+    width: unset;
+  }
 }
 @media (min-width: 800px) {
   #links a {
@@ -173,7 +184,7 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  filter: drop-shadow(1px 1px 1px #007ec0);
+  filter: drop-shadow(2px 2px 2px var(--text-secondary-color));
 }
 #photo img:hover {
   cursor: pointer;
@@ -183,12 +194,19 @@ main {
     width: 150px;
     height: 150px;
   }
+  #photo img:hover {
+    filter: drop-shadow(0 0 5px var(--text-secondary-color));
+  }
 }
 @media (min-width: 800px) {
   #photo img {
-    border-radius: 50px;
+    border-radius: 10px;
     width: 250px;
     height: 250px;
+  }
+  #photo img:hover {
+    filter: drop-shadow(0 0 10px var(--text-secondary-color));
+    width: 252px;
   }
 }
 /*description section*/
@@ -269,6 +287,9 @@ footer {
   display: block;
   margin-top: 20px;
 }
+.project a:hover {
+  text-decoration: underline overline var(--text-third-color);
+}
 /* Span section */
 .info span {
   color: var(--text-secondary-color);
@@ -311,8 +332,8 @@ footer {
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-template-areas:
       "first-left first-left"
-      "first-right second-left"
-      "second-right third-left";
+      "first-right second-right"
+      "third-left second-left";
   }
 }
 
@@ -328,8 +349,14 @@ footer {
   margin: 0 auto;
 }
 .first-left img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  filter: drop-shadow(2px 2px 2px var(--text-secondary-color));
+}
+.first-left img:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px var(--text-secondary-color));
 }
 /* Introducing section */
 .first-right {
@@ -349,7 +376,53 @@ footer {
 /*################################################################*/
 /*#####################   CONTACTS.HTML   ###########################*/
 /*################################################################*/
+/* General Content Wrapper */
+.contact-wrapper h2 {
+  color: var(--text-secondary-color);
+  display: block;
+  margin-bottom: 40px;
+}
 .contact-wrapper {
+  text-align: center;
   margin: 20px auto;
+  padding: 20px;
   width: 200px;
+}
+.contact-wrapper > div {
+  margin: 10px;
+}
+@media (min-width: 800px) {
+  .contact-wrapper {
+    width: 50%;
+    display: grid;
+    grid-template-areas:
+      "contact-header contact-header"
+      "linkedin github"
+      "email email";
+  }
+  /* Contact Header */
+  .contact-header {
+    grid-area: contact-header;
+  }
+  /* LinkdIn section */
+  .linkedin {
+    grid-area: linkedin;
+  }
+  /* Github Section */
+  .github {
+    grid-area: github;
+  }
+  /* Email Section */
+  .email {
+    grid-area: email;
+  }
+  /* Common Styles */
+  .linkedin img:hover,
+  .github img:hover {
+    filter: drop-shadow(0 0 1px var(--text-secondary-color));
+  }
+  .email p:hover {
+    cursor: pointer;
+    letter-spacing: 0.1px;
+  }
 }
