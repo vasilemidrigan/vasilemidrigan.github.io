@@ -194,19 +194,12 @@ main {
     width: 150px;
     height: 150px;
   }
-  #photo img:hover {
-    filter: drop-shadow(0 0 5px var(--text-secondary-color));
-  }
 }
 @media (min-width: 800px) {
   #photo img {
     border-radius: 10px;
     width: 250px;
     height: 250px;
-  }
-  #photo img:hover {
-    filter: drop-shadow(0 0 10px var(--text-secondary-color));
-    width: 252px;
   }
 }
 /*description section*/
@@ -281,6 +274,9 @@ footer {
 /*################################################################*/
 /*#####################   PROJECTS.HTML   ###########################*/
 /*################################################################*/
+.project {
+  padding: 20px;
+}
 /* Links */
 .project a {
   color: var(--text-third-color);
@@ -304,10 +300,6 @@ footer {
   padding: 20px;
   font-size: 1.3em;
 }
-.project {
-  padding: 20px;
-}
-
 /*about.html styles*/
 /*################################################################*/
 /*#####################   ABOUT.HTML   ###########################*/
@@ -356,7 +348,6 @@ footer {
 }
 .first-left img:hover {
   cursor: pointer;
-  filter: drop-shadow(0 0 5px var(--text-secondary-color));
 }
 /* Introducing section */
 .first-right {
