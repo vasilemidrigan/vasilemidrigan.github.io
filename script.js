@@ -7,12 +7,8 @@ const footer = document.querySelector("footer");
 function showHide() {
   if (links.style.display === "block") {
     links.style.display = "none";
-    main.style.opacity = 1;
-    footer.style.opacity = 1;
   } else {
     links.style.display = "block";
-    main.style.opacity = 0.2;
-    footer.style.opacity = 0.2;
   }
 }
 

@@ -140,6 +140,11 @@ nav a {
   justify-content: center;
   transition: 0.3s ease-in-out;
 }
+@media (min-width: 800px) {
+  #hamburger-menu {
+    display: none;
+  }
+}
 #hamburger-menu span {
   height: 7px;
   border-radius: 3px;
@@ -170,28 +175,6 @@ nav a {
 #hamburger-menu.active span:nth-child(4) {
   opacity: 0;
 }
-
-/* .icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  height: 100%;
-  right: 0;
-  top: 0;
-}
-@media (min-width: 800px) {
-  .icon {
-    display: none;
-  }
-}
-.icon:hover {
-  cursor: pointer;
-}
-.icon img {
-  display: block;
-} */
-
 /*main*/
 main {
   display: grid;
