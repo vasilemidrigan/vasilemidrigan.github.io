@@ -145,7 +145,7 @@ nav a {
   border-radius: 3px;
   background-color: var(--text-third-color);
   position: absolute;
-  width: 85%;
+  width: 80%;
   transition: 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 #hamburger-menu span:nth-child(1) {
