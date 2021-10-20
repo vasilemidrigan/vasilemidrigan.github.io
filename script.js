@@ -15,3 +15,9 @@ function showHide() {
     footer.style.opacity = 0.2;
   }
 }
+
+const hamburgerMenu = document.getElementById("hamburger-menu");
+
+function hamburgerAnimation() {
+  hamburgerMenu.classList.toggle("active");
+}
