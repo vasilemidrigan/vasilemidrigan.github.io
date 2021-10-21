@@ -94,6 +94,7 @@ nav {
   background-color: var(--main-background-color);
   width: 100%;
   opacity: 0.9;
+  height: 100vh;
 }
 #links a {
   width: 50vw;
