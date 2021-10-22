@@ -1,8 +1,6 @@
 // Toggle between showing and hiding the navigation menu when the user click
 //  on the hamburger menu icon
 const links = document.getElementById("links");
-const main = document.querySelector("main");
-const footer = document.querySelector("footer");
 
 function showHide() {
   if (links.style.display === "block") {

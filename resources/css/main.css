@@ -93,7 +93,6 @@ nav {
   z-index: 1;
   background-color: var(--main-background-color);
   width: 100%;
-  opacity: 0.9;
   height: 100vh;
 }
 #links a {
@@ -114,6 +113,7 @@ nav {
     z-index: unset;
     opacity: 1;
     display: inline-block;
+    height: unset;
   }
   #links a {
     width: unset;
@@ -180,7 +180,7 @@ nav a {
 main {
   display: grid;
   justify-items: center;
-  grid-template: 0.5 1fr / 1fr;
+  grid-template: 0.5fr 1fr / 1fr;
   grid-template-areas:
     "photo"
     "description";
