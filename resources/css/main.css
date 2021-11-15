@@ -319,6 +319,15 @@ footer {
 .project img {
   width: 200px;
 }
+@media (min-width: 400px) {
+  .project img {
+    width: 300px;
+  }
+}
+/* Project page desktop size images */
+.project .desktop-image {
+  width: 80%;
+}
 .project a:hover {
   text-decoration: underline overline var(--text-third-color);
 }
