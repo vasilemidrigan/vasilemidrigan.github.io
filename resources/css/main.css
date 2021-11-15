@@ -46,7 +46,7 @@ p {
   color: var(--text-main-color);
 }
 hr {
-  margin: 10px 100px;
+  margin: 10px 20px;
 }
 /*specific styles*/
 /*header*/
@@ -306,6 +306,18 @@ footer {
   color: var(--text-third-color);
   display: block;
   margin-top: 20px;
+}
+/* Projects headers */
+.project h2 {
+  color: var(--text-secondary-color);
+  margin-bottom: 10px;
+}
+.project h3 {
+  color: var(--text-main-color);
+}
+/* Images from projects page */
+.project img {
+  width: 200px;
 }
 .project a:hover {
   text-decoration: underline overline var(--text-third-color);
