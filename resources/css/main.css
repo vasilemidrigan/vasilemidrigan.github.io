@@ -312,15 +312,9 @@ footer {
   color: var(--text-secondary-color);
   margin-bottom: 10px;
 }
-.project h3 {
-  color: var(--text-main-color);
-}
-/* Images from projects page */
-.project img {
-  width: 200px;
-}
-@media (min-width: 400px) {
-  .project img {
+
+@media (max-width: 800px) {
+  .project video {
     width: 300px;
   }
 }
@@ -345,6 +339,11 @@ footer {
   padding: 20px;
   font-size: 1.3em;
 }
+
+.video {
+  margin: 20px;
+}
+
 /*about.html styles*/
 /*################################################################*/
 /*#####################   ABOUT.HTML   ###########################*/
