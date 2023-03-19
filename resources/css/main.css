@@ -325,6 +325,10 @@ footer {
 .project a:hover {
   text-decoration: underline overline var(--text-third-color);
 }
+.project p {
+  max-width: 600px;
+  margin: 0 auto;
+}
 /* Span section */
 .info span {
   color: var(--text-secondary-color);
